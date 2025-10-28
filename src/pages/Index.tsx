@@ -484,6 +484,17 @@ const Index = () => {
               <Icon name="MapPin" size={24} className="text-accent" />
               <span className="text-xl">г. Мытищи, Олимпийский проспект 15, корпус 16</span>
             </div>
+            <div className="mt-8">
+              <a 
+                href="https://t.me/yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#0088cc] hover:bg-[#006ba8] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Icon name="Send" size={24} />
+                Написать в Telegram
+              </a>
+            </div>
             <div className="flex flex-col items-center gap-2">
               <div className="flex items-center gap-4">
                 <Icon name="Clock" size={24} className="text-accent" />
