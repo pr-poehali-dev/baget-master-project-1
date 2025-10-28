@@ -156,7 +156,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-2">Примеры оформления</h2>
-            <p className="text-sm text-muted-foreground italic">*еще больше примеров работ в нашей группе Vk</p>
+            <p className="text-sm text-muted-foreground italic">*еще больше примеров работ в нашей <a href="https://vk.com/your_group" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">группе Vk</a></p>
           </div>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             {gallery.map((item, index) => (
