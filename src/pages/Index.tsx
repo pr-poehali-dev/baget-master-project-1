@@ -119,11 +119,6 @@ const Index = () => {
             <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
         </nav>
-        <Link to="/contacts">
-          <Button variant="default" size="lg" className="fixed bottom-8 right-8 z-50 shadow-2xl hover:shadow-accent/50 transition-all">
-            Связаться с нами
-          </Button>
-        </Link>
       </header>
 
       <section className="pt-32 pb-20 px-4">
