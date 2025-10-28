@@ -320,12 +320,12 @@ const Index = () => {
             
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <img 
-                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg"
-                alt="Оформленная работа 5"
+                src="https://cdn.poehali.dev/files/83ceccb5-3339-4421-ae45-26717d01a7ff.jpg"
+                alt="Объемное оформление замка с ключом"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Минималистичное оформление</p>
+                <p className="text-white font-semibold">Объемное оформление</p>
               </div>
             </div>
             
