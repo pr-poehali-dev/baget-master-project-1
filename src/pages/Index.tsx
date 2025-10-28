@@ -61,7 +61,7 @@ const Index = () => {
     {
       image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/6c932cd3-0806-4689-8239-e8bb83ca7bf0.jpg",
       title: "Декоративное зеркало",
-      description: "Резная деревянная рама"
+      description: "Изготовление и оформление зеркал"
     },
     {
       image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/4eca7ed4-155b-4de1-99b0-b4c20ae6c414.jpg",
