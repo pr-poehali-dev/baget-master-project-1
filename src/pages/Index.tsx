@@ -86,9 +86,9 @@ const Index = () => {
       description: "Объемная рама для медалей"
     },
     {
-      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/bab79114-4408-427d-809c-46f7a40a2dac.jpg",
+      image: "https://cdn.poehali.dev/files/fe8791c8-c35f-46b7-80ef-a7c592616362.jpg",
       title: "Семейное фото",
-      description: "Современная черная рама"
+      description: "Креативная галерея на прищепках в золотой раме"
     }
   ];
 
