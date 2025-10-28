@@ -105,7 +105,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/40a4138e-6e31-4536-a1e6-cbdf5428848d.png" 
               alt="Магия Багета" 
-              className="h-12 w-12 object-contain"
+              className="h-16 w-16 object-contain"
             />
             <div>
               <h1 className="text-red-700 text-5xl" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
