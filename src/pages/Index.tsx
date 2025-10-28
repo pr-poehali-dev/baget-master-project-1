@@ -122,7 +122,7 @@ const Index = () => {
             <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
           <button 
-            className="md:hidden text-red-900" 
+            className="md:hidden text-red-900 transition-transform duration-300" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Меню"
           >
@@ -130,7 +130,7 @@ const Index = () => {
           </button>
         </nav>
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white/95 border-t relative z-10">
+          <div className="md:hidden bg-white/95 border-t relative z-10 animate-slide-down">
             <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
               <a 
                 href="#services" 
