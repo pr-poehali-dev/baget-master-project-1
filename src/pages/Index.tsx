@@ -2,11 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const galleryItems = [
     { image: "https://cdn.poehali.dev/files/32a3e740-baff-4e7d-b69d-cc8612a02bd4.jpg", alt: "Вышивка в классическом багете", title: "Классическое оформление" },
@@ -28,6 +29,17 @@ const Index = () => {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
   };
+
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    
+    return () => clearInterval(interval);
+  }, [currentSlide, isAutoPlaying]);
+
   const services = [
     {
       title: "Оформление картин",
@@ -295,13 +307,17 @@ const Index = () => {
       <section id="gallery" className="py-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Галерея работ</h2>
-          <div className="relative">
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsAutoPlaying(false)}
+            onMouseLeave={() => setIsAutoPlaying(true)}
+          >
             <div className="overflow-hidden rounded-lg shadow-2xl">
               <div className="relative h-[500px] md:h-[600px]">
                 <img 
                   src={galleryItems[currentSlide].image}
                   alt={galleryItems[currentSlide].alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-opacity duration-500"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
                   <h3 className="text-white text-2xl md:text-3xl font-bold">{galleryItems[currentSlide].title}</h3>
