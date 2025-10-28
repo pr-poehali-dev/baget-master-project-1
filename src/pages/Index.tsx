@@ -6,6 +6,28 @@ import { useState } from "react";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const galleryItems = [
+    { image: "https://cdn.poehali.dev/files/32a3e740-baff-4e7d-b69d-cc8612a02bd4.jpg", alt: "Вышивка в классическом багете", title: "Классическое оформление" },
+    { image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg", alt: "Оформленная работа 2", title: "Современный стиль" },
+    { image: "https://cdn.poehali.dev/files/04d55c82-94e2-4600-9b2f-e3ac08f759be.jpg", alt: "Натюрморт в золотом багете", title: "Индивидуальные решения" },
+    { image: "https://cdn.poehali.dev/files/d31feca3-7949-4619-841d-e4a63a5164ea.jpg", alt: "Обложки TIME в музейном оформлении", title: "Музейное качество" },
+    { image: "https://cdn.poehali.dev/files/83ceccb5-3339-4421-ae45-26717d01a7ff.jpg", alt: "Объемное оформление замка с ключом", title: "Объемное оформление" },
+    { image: "https://cdn.poehali.dev/files/276cf8b7-25c6-4c3d-8b4d-4682f725338a.jpg", alt: "Акварель собора в черном багете", title: "Эксклюзивные багеты" },
+    { image: "https://cdn.poehali.dev/files/0bea69c2-b361-49fc-8302-ee1eb79e1040.jpg", alt: "Футболка ЦСКА с автографом в раме", title: "Спортивная атрибутика" },
+    { image: "https://cdn.poehali.dev/files/95c64322-c54b-44ea-8e9b-ea9dd2f91ffc.jpg", alt: "Коллекция наград и медалей в раме", title: "Оформление наград" },
+    { image: "https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg", alt: "Реставрация старинной иконы", title: "Реставрация икон" },
+    { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % galleryItems.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
+  };
   const services = [
     {
       title: "Оформление картин",
@@ -271,117 +293,52 @@ const Index = () => {
       </section>
 
       <section id="gallery" className="py-20 px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Галерея работ</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in">
-              <img 
-                src="https://cdn.poehali.dev/files/32a3e740-baff-4e7d-b69d-cc8612a02bd4.jpg"
-                alt="Вышивка в классическом багете"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Классическое оформление</p>
+          <div className="relative">
+            <div className="overflow-hidden rounded-lg shadow-2xl">
+              <div className="relative h-[500px] md:h-[600px]">
+                <img 
+                  src={galleryItems[currentSlide].image}
+                  alt={galleryItems[currentSlide].alt}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
+                  <h3 className="text-white text-2xl md:text-3xl font-bold">{galleryItems[currentSlide].title}</h3>
+                  <p className="text-white/80 mt-2">{currentSlide + 1} / {galleryItems.length}</p>
+                </div>
               </div>
             </div>
             
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <img 
-                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg"
-                alt="Оформленная работа 2"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Современный стиль</p>
-              </div>
-            </div>
+            <button 
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              aria-label="Предыдущий слайд"
+            >
+              <Icon name="ChevronLeft" size={32} />
+            </button>
             
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/04d55c82-94e2-4600-9b2f-e3ac08f759be.jpg"
-                alt="Натюрморт в золотом багете"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Индивидуальные решения</p>
-              </div>
-            </div>
+            <button 
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              aria-label="Следующий слайд"
+            >
+              <Icon name="ChevronRight" size={32} />
+            </button>
             
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/d31feca3-7949-4619-841d-e4a63a5164ea.jpg"
-                alt="Обложки TIME в музейном оформлении"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Музейное качество</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/83ceccb5-3339-4421-ae45-26717d01a7ff.jpg"
-                alt="Объемное оформление замка с ключом"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Объемное оформление</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/276cf8b7-25c6-4c3d-8b4d-4682f725338a.jpg"
-                alt="Акварель собора в черном багете"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Эксклюзивные багеты</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/0bea69c2-b361-49fc-8302-ee1eb79e1040.jpg"
-                alt="Футболка ЦСКА с автографом в раме"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Спортивная атрибутика</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.7s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/95c64322-c54b-44ea-8e9b-ea9dd2f91ffc.jpg"
-                alt="Коллекция наград и медалей в раме"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Оформление наград</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg"
-                alt="Реставрация старинной иконы"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Реставрация икон</p>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.9s' }}>
-              <img 
-                src="https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg"
-                alt="Икона с серебряным окладом в резном багете"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <p className="text-white font-semibold">Оформление икон</p>
-              </div>
+            <div className="flex justify-center gap-3 mt-8">
+              {galleryItems.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide 
+                      ? 'bg-accent w-8' 
+                      : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                  }`}
+                  aria-label={`Перейти к слайду ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
