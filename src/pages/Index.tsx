@@ -119,9 +119,8 @@ const Index = () => {
           <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Искусство<br />оформления
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства. 
+Самый большой выбор багета. Самые короткие сроки оформления. Самые честные цены.</p>
         </div>
       </section>
 
