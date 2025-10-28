@@ -339,6 +339,17 @@ const Index = () => {
                 <p className="text-white font-semibold">Эксклюзивные багеты</p>
               </div>
             </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <img 
+                src="https://cdn.poehali.dev/files/0bea69c2-b361-49fc-8302-ee1eb79e1040.jpg"
+                alt="Футболка ЦСКА с автографом в раме"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Спортивная атрибутика</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
