@@ -297,9 +297,7 @@ const Index = () => {
                   alt="После оформления"
                   className="w-full rounded-lg shadow-lg"
                 />
-                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">
-                  После
-                </div>
+                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">До</div>
               </div>
               <p className="text-center text-muted-foreground">
                 Классическая живопись в элегантном багете
