@@ -74,7 +74,7 @@ const Index = () => {
       description: "Традиционное оформление с орнаментом"
     },
     {
-      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/6ea05452-4118-4f8c-b320-dd986f49ce20.jpg",
+      image: "https://cdn.poehali.dev/files/d561e231-8dd5-43c5-9388-07ee12f21a2e.jpg",
       title: "Акварельный рисунок",
       description: "Белая минималистичная рама"
     },
