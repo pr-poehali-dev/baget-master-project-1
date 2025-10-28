@@ -65,8 +65,8 @@ const Index = () => {
           <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Искусство<br />оформления
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Превращаем ваши картины, фотографии и зеркала в произведения искусства
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства
           </p>
           <Button size="lg" className="text-lg px-8 py-6">
             Заказать консультацию
