@@ -18,6 +18,7 @@ const Index = () => {
     { image: "https://cdn.poehali.dev/files/276cf8b7-25c6-4c3d-8b4d-4682f725338a.jpg", alt: "Акварель собора в черном багете", title: "Эксклюзивные багеты" },
     { image: "https://cdn.poehali.dev/files/0bea69c2-b361-49fc-8302-ee1eb79e1040.jpg", alt: "Футболка ЦСКА с автографом в раме", title: "Спортивная атрибутика" },
     { image: "https://cdn.poehali.dev/files/95c64322-c54b-44ea-8e9b-ea9dd2f91ffc.jpg", alt: "Коллекция наград и медалей в раме", title: "Оформление наград" },
+    { image: "https://cdn.poehali.dev/files/13398175-6438-4cdc-a142-1eccad990cc3.jpg", alt: "Историческая акция в светлой раме", title: "Оформление документов" },
     { image: "https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg", alt: "Реставрация старинной иконы", title: "Реставрация икон" },
     { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" }
   ];
