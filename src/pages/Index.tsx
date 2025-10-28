@@ -319,6 +319,10 @@ const Index = () => {
               <Icon name="MapPin" size={24} className="text-accent" />
               <span className="text-xl">г. Мытищи, Олимпийский проспект 15, корпус 16</span>
             </div>
+            <div className="flex items-center justify-center gap-4">
+              <Icon name="Clock" size={24} className="text-accent" />
+              <span className="text-xl">Пн-Пт: 10:00-19:00, Сб-Вс: 10:00-17:00</span>
+            </div>
           </div>
           <div className="mt-12 space-y-6">
             <Button size="lg" className="text-lg px-8 py-6">
