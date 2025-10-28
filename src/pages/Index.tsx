@@ -100,7 +100,10 @@ const Index = () => {
               alt="Магия Багета" 
               className="h-12 w-12 object-contain"
             />
-            <h1 className="text-2xl font-bold">Багетная мастерская</h1>
+            <div>
+              <h1 className="text-2xl font-bold">Магия Багета</h1>
+              <p className="text-sm text-muted-foreground">Багетная мастерская</p>
+            </div>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors">Услуги</a>
