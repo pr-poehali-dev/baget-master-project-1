@@ -18,6 +18,11 @@ const Index = () => {
       title: "Оформление зеркал",
       description: "Эксклюзивные рамы для зеркал, которые станут украшением любого интерьера",
       icon: "Sparkles"
+    },
+    {
+      title: "Оформление объемных предметов",
+      description: "Профессиональное оформление медалей, орденов, коллекций и других памятных предметов",
+      icon: "Box"
     }
   ];
 
@@ -77,7 +82,7 @@ const Index = () => {
       <section id="services" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Наши услуги</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <Card 
                 key={index} 
