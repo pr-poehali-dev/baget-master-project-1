@@ -22,6 +22,7 @@ const Index = () => {
     { image: "https://cdn.poehali.dev/files/19718a09-e210-44bb-b28e-0f8f019b6ebb.jpg", alt: "Натюрморт с цветами в деревянной раме", title: "Живопись маслом" },
     { image: "https://cdn.poehali.dev/files/143f62f8-aa24-4856-9de3-a9d23f87be77.jpg", alt: "Коллекция вышивок крестом в серебристой раме", title: "Вышивка крестом" },
     { image: "https://cdn.poehali.dev/files/5cbe3455-3ebe-4580-9a1f-8d87987e2a15.jpg", alt: "Акварельная иллюстрация кита в чёрной раме", title: "Акварельная живопись" },
+    { image: "https://cdn.poehali.dev/files/c752dd21-8e48-4b74-9508-91ca88140894.jpg", alt: "Кружевная салфетка на синем фоне в белой раме", title: "Оформление кружева" },
     { image: "https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg", alt: "Реставрация старинной иконы", title: "Реставрация икон" },
     { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" }
   ];
