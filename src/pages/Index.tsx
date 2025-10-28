@@ -361,6 +361,17 @@ const Index = () => {
                 <p className="text-white font-semibold">Оформление наград</p>
               </div>
             </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+              <img 
+                src="https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg"
+                alt="Реставрация старинной иконы"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Реставрация икон</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
