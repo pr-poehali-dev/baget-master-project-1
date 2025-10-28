@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const services = [
     {
       title: "Оформление картин",
@@ -119,7 +121,55 @@ const Index = () => {
             <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium">О нас</a>
             <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
+          <button 
+            className="md:hidden text-red-900" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Меню"
+          >
+            <Icon name={mobileMenuOpen ? "X" : "Menu"} size={32} />
+          </button>
         </nav>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white/95 border-t relative z-10">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <a 
+                href="#services" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Услуги
+              </a>
+              <a 
+                href="#works" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Примеры работ
+              </a>
+              <a 
+                href="#gallery" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Галерея
+              </a>
+              <a 
+                href="#about" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                О нас
+              </a>
+              <a 
+                href="#contacts" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Контакты
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
       <section className="pt-32 pb-20 px-4">
