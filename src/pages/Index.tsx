@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
@@ -357,6 +358,14 @@ const Index = () => {
             <a href="#" className="hover:text-accent transition-colors">
               <Icon name="Youtube" size={24} />
             </a>
+          </div>
+          <div className="flex justify-center gap-6 mt-8">
+            <Link to="/privacy" className="hover:text-accent transition-colors text-sm">
+              Политика конфиденциальности
+            </Link>
+            <Link to="/terms" className="hover:text-accent transition-colors text-sm">
+              Пользовательское соглашение
+            </Link>
           </div>
           <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-sm text-primary-foreground/60">
             <p className="mb-2">© 2024 Багетная мастерская. Все права защищены.</p>
