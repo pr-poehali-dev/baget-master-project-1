@@ -114,7 +114,8 @@ const Index = () => {
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
-            <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
+            <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
+            <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Галерея</a>
             <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium">О нас</a>
             <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
@@ -152,7 +153,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-20 px-4">
+      <section id="works" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-2">Примеры оформления</h2>
@@ -216,6 +217,79 @@ const Index = () => {
                 <div className="text-muted-foreground">образцов</div>
               </div>
             </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Галерея работ</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in">
+              <img 
+                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/ad9f4878-4d43-4868-8384-84633ac56109.jpg"
+                alt="Оформленная работа 1"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Классическое оформление</p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <img 
+                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg"
+                alt="Оформленная работа 2"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Современный стиль</p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <img 
+                src="https://cdn.poehali.dev/files/b8391ce2-a7dd-4f8c-8dbd-1f8515f43cc6.jpg"
+                alt="Оформленная работа 3"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Индивидуальные решения</p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <img 
+                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/ad9f4878-4d43-4868-8384-84633ac56109.jpg"
+                alt="Оформленная работа 4"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Музейное качество</p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <img 
+                src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg"
+                alt="Оформленная работа 5"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Минималистичное оформление</p>
+              </div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <img 
+                src="https://cdn.poehali.dev/files/b8391ce2-a7dd-4f8c-8dbd-1f8515f43cc6.jpg"
+                alt="Оформленная работа 6"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Эксклюзивные багеты</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
