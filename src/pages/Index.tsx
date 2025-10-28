@@ -486,7 +486,7 @@ const Index = () => {
             </div>
             <div className="mt-8">
               <a 
-                href="https://t.me/yourusername" 
+                href="https://t.me/mag_baget" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#0088cc] hover:bg-[#006ba8] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
