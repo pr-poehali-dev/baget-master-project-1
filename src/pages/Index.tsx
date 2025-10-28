@@ -184,14 +184,24 @@ const Index = () => {
       </section>
 
       <section id="about" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О мастерской</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-center">
-            <p>Наша багетная мастерская — это место, где искусство и творчество встречается с мастерством. Из огромного ассортимента деревянного, пластикового багета и сопутствующих материалов мы подбираем варианты оформления, учитывая ваши пожелания и особенности работы.</p>
-            <p className="text-muted-foreground">
-              С 2010 года мы помогаем клиентам сохранить и представить их ценные работы 
-              в самом выгодном свете. Используем только качественные материалы и проверенные временем техники.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p>Наша багетная мастерская — это место, где искусство и творчество встречается с мастерством. Из огромного ассортимента деревянного, пластикового багета и сопутствующих материалов мы подбираем варианты оформления, учитывая ваши пожелания и особенности работы.</p>
+              <p className="text-muted-foreground">
+                С 2010 года мы помогаем клиентам сохранить и представить их ценные работы 
+                в самом выгодном свете. Используем только качественные материалы и проверенные временем техники.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://cdn.poehali.dev/files/b8391ce2-a7dd-4f8c-8dbd-1f8515f43cc6.jpg"
+                alt="Багетная мастерская"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
             <div className="flex justify-center gap-12 pt-8">
               <div className="text-center">
                 <div className="text-4xl font-bold text-accent mb-2">15+</div>
@@ -206,7 +216,6 @@ const Index = () => {
                 <div className="text-muted-foreground">образцов</div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
