@@ -66,7 +66,7 @@ const Index = () => {
     {
       image: "https://cdn.poehali.dev/files/8e49e163-c6de-4fb6-bdab-e39b5f8f2ed7.jpg",
       title: "Вышивка крестом",
-      description: "Элегантная деревянная рама"
+      description: "Элегантная деревянная рама. Двойное бархатное паспарту. Музейное стекло."
     },
     {
       image: "https://cdn.poehali.dev/files/ec5782d5-84d8-4e2e-9ec4-78c281f94109.jpg",
