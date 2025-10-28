@@ -49,7 +49,7 @@ const Index = () => {
               alt="Магия Багета" 
               className="h-12 w-12 object-contain"
             />
-            <h1 className="text-2xl font-bold">Магия Багета</h1>
+            <h1 className="text-2xl font-bold">Багетная мастерская</h1>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors">Услуги</a>
@@ -187,7 +187,7 @@ const Index = () => {
 
       <footer className="bg-primary text-primary-foreground py-12 px-4">
         <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4">Магия Багета</h3>
+          <h3 className="text-2xl font-bold mb-4">Багетная мастерская</h3>
           <p className="text-primary-foreground/80 mb-6">
             Искусство в каждой детали
           </p>
@@ -203,7 +203,7 @@ const Index = () => {
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-sm text-primary-foreground/60">
-            © 2024 Магия Багета. Все права защищены.
+            © 2024 Багетная мастерская. Все права защищены.
           </div>
         </div>
       </footer>
