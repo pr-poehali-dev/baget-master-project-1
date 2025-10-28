@@ -50,7 +50,7 @@ const Index = () => {
   const gallery = [
     {
       image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/ea8c84e0-dc59-47be-9fc8-47aed1c4c54a.jpg",
-      title: "Классическая живопись",
+      title: "Оформление картин",
       description: "Багет в стиле барокко"
     },
     {
