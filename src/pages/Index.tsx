@@ -326,7 +326,7 @@ const Index = () => {
             </Button>
             <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
               <iframe 
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f8e3c8e7d0f8e3c8e7d0f8e3c8e7d0f&source=constructor" 
+                src="https://yandex.ru/map-widget/v1/?ll=37.756597%2C55.921450&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjgyNzY3MRJt0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JzRi9GC0LjRidC4LCDQntC70LjQvNC_0LjQudGB0LrQuNC5INC_0YDQvtGB0L_QtdC60YIsIDE1IgoNODPeQRWO2FlC&z=17" 
                 width="100%" 
                 height="400" 
                 frameBorder="0"
@@ -335,7 +335,7 @@ const Index = () => {
               />
             </div>
             <a 
-              href="https://yandex.ru/maps/?rtext=~55.912499,37.735830" 
+              href="https://yandex.ru/maps/?rtext=~55.921450,37.756597" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-accent hover:underline"
