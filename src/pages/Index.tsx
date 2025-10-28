@@ -116,7 +116,7 @@ const Index = () => {
             <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
             <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
             <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium">О нас</a>
-            <a href="#contacts" className="hover:text-accent transition-colors">Контакты</a>
+            <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
         </nav>
         <Link to="/contacts">
