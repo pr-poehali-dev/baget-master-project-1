@@ -108,7 +108,7 @@ const Index = () => {
               className="h-12 w-12 object-contain"
             />
             <div>
-              <h1 className="font-bold text-red-700 text-2xl uppercase tracking-widest text-center" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
+              <h1 className="font-bold text-red-700 text-2xl uppercase tracking-widest" style={{ fontFamily: "'Cinzel Decorative', serif" }}>"Магия Багета"</h1>
               <p className="text-sm text-muted-foreground mx-9">Багетная мастерская</p>
             </div>
           </div>
