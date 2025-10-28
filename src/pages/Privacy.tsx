@@ -97,7 +97,7 @@ const Privacy = () => {
             <ul className="list-none pl-0 mt-2 space-y-1">
               <li>Адрес: г. Мытищи, Олимпийский проспект 15, корпус 16</li>
               <li>Телефон: +7 (965) 331-12-28</li>
-              <li>Email: info@baget.ru</li>
+              <li>Email: aktok@mail.ru</li>
             </ul>
           </section>
 
