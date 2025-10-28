@@ -155,7 +155,122 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4">
+      <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Отзывы клиентов</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="animate-fade-in">
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Отличная работа! Оформили семейную фотографию в багет за 30 минут. 
+                  Качество превосходное, рама идеально подобрана под интерьер."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Анна Петрова</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Профессиональный подход к каждой детали. Мастера помогли выбрать 
+                  идеальный багет для моей картины. Результат превзошёл ожидания!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Дмитрий Соколов</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Огромный выбор багета! Нашли именно то, что искали для антикварного зеркала. 
+                  Работа выполнена безупречно, очень довольны!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Елена Волкова</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">До и после</h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="space-y-4 animate-fade-in">
+              <div className="relative group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/ea8c84e0-dc59-47be-9fc8-47aed1c4c54a.jpg"
+                  alt="После оформления"
+                  className="w-full rounded-lg shadow-lg"
+                />
+                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">
+                  После
+                </div>
+              </div>
+              <p className="text-center text-muted-foreground">
+                Классическая живопись в элегантном багете
+              </p>
+            </div>
+
+            <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.15s' }}>
+              <div className="relative group">
+                <img 
+                  src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/10081c46-9ed8-4b99-bf50-29e4b0ff29a3.jpg"
+                  alt="После оформления"
+                  className="w-full rounded-lg shadow-lg"
+                />
+                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">
+                  После
+                </div>
+              </div>
+              <p className="text-center text-muted-foreground">
+                Современная фотография в минималистичной раме
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Свяжитесь с нами</h2>
           <p className="text-xl text-muted-foreground mb-12">
