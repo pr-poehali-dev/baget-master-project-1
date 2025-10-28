@@ -359,7 +359,8 @@ const Index = () => {
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-sm text-primary-foreground/60">
-            © 2024 Багетная мастерская. Все права защищены.
+            <p className="mb-2">© 2024 Багетная мастерская. Все права защищены.</p>
+            <p>ИП Лукинский Антон Эдуардович ОГРНИП 323508100708727</p>
           </div>
         </div>
       </footer>
