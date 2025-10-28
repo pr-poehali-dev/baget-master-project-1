@@ -59,7 +59,7 @@ const Index = () => {
       description: "Минималистичная рама"
     },
     {
-      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/6c932cd3-0806-4689-8239-e8bb83ca7bf0.jpg",
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/fceb7dc0-ae1d-4d31-8c09-08a9e7d3574c.jpg",
       title: "Декоративное зеркало",
       description: "Изготовление и оформление зеркал"
     },
