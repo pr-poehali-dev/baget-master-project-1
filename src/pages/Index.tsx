@@ -76,7 +76,7 @@ const Index = () => {
     {
       image: "https://cdn.poehali.dev/files/d561e231-8dd5-43c5-9388-07ee12f21a2e.jpg",
       title: "Акварельный рисунок",
-      description: "Белая минималистичная рама"
+      description: "Светлая минималистическая рамка с паспарту"
     },
     {
       image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/f083b4e8-425a-4a56-91de-06f737076ba5.jpg",
