@@ -62,6 +62,31 @@ const Index = () => {
       image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/6c932cd3-0806-4689-8239-e8bb83ca7bf0.jpg",
       title: "Декоративное зеркало",
       description: "Резная деревянная рама"
+    },
+    {
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/4eca7ed4-155b-4de1-99b0-b4c20ae6c414.jpg",
+      title: "Вышивка крестом",
+      description: "Элегантная деревянная рама"
+    },
+    {
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/2486f7cf-53f8-437a-92e7-290b126f3b9c.jpg",
+      title: "Православная икона",
+      description: "Традиционное оформление с орнаментом"
+    },
+    {
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/6ea05452-4118-4f8c-b320-dd986f49ce20.jpg",
+      title: "Акварельный рисунок",
+      description: "Белая минималистичная рама"
+    },
+    {
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/f083b4e8-425a-4a56-91de-06f737076ba5.jpg",
+      title: "Оформление наград",
+      description: "Объемная рама для медалей"
+    },
+    {
+      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/bab79114-4408-427d-809c-46f7a40a2dac.jpg",
+      title: "Семейное фото",
+      description: "Современная черная рама"
     }
   ];
 
@@ -123,7 +148,7 @@ const Index = () => {
       <section id="gallery" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Примеры оформления</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             {gallery.map((item, index) => (
               <div 
                 key={index} 
