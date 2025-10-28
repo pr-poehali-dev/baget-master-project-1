@@ -102,7 +102,7 @@ const Index = () => {
             />
             <div>
               <h1 className="font-bold text-red-700 text-2xl uppercase tracking-widest" style={{ fontFamily: "'Cinzel Decorative', serif" }}>"Магия Багета"</h1>
-              <p className="text-sm text-muted-foreground">Багетная мастерская</p>
+              <p className="text-sm text-muted-foreground mx-9">Багетная мастерская</p>
             </div>
           </div>
           <div className="hidden md:flex gap-8">
