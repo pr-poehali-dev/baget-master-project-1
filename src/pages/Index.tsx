@@ -209,40 +209,29 @@ const Index = () => {
       </header>
 
       <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            Профессиональное <span className="text-accent">багетное оформление</span> в Москве
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Превращаем ваши картины, фотографии и памятные предметы в произведения искусства
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-              <a href="#contacts" className="flex items-center">
-                Заказать оформление
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10">
-              <a href="#gallery">
-                Посмотреть работы
-              </a>
-            </Button>
-          </div>
+        <div className="container mx-auto text-center animate-fade-in">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-center text-red-900">Магия и искусство оформления</h2>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium text-zinc-900">Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства. 
+Самый большой выбор багета. Самые короткие сроки оформления. Самые честные цены.</p>
         </div>
       </section>
 
-      <section id="services" className="py-20 px-4">
+      <section id="services" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Наши услуги</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-900">Наши услуги</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/90 backdrop-blur border-accent/20">
-                <CardContent className="p-6">
-                  <div className="bg-accent/10 w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                    <Icon name={service.icon as any} className="text-accent" size={28} />
+              <Card 
+                key={index} 
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                    <Icon name={service.icon} size={32} className="text-accent" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -250,52 +239,54 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="works" className="py-20 px-4 bg-white/40 backdrop-blur-sm">
+      <section id="works" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Примеры наших работ</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-2">Примеры оформления</h2>
+            <p className="text-sm text-muted-foreground italic">*еще больше примеров работ в нашей <a href="https://vk.com/magbaget" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">группе Vk</a></p>
+          </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             {gallery.map((item, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[3/4]">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="text-white">
-                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-sm text-white/80">{item.description}</p>
+              <div 
+                key={index} 
+                className="group cursor-pointer animate-fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <div className="relative overflow-hidden rounded-lg mb-4 aspect-square">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Icon name="ZoomIn" size={48} className="text-white" />
                   </div>
                 </div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 bg-white/40 backdrop-blur-sm">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О нашей мастерской</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed">
-                Багетная мастерская "Магия Багета" — это команда профессионалов с многолетним опытом работы в сфере багетного оформления. Мы создаём уникальные рамы, которые подчёркивают красоту и ценность ваших работ.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Наша мастерская оснащена современным оборудованием, позволяющим выполнять работы любой сложности. Мы используем только качественные материалы от проверенных поставщиков и предлагаем широкий выбор багета на любой вкус и бюджет.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Каждый проект для нас уникален. Мы внимательно прислушиваемся к пожеланиям клиентов и предлагаем решения, которые идеально дополнят ваш интерьер и подчеркнут индивидуальность каждой работы.
+      <section id="about" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О мастерской</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p>Наша багетная мастерская — это место, где искусство и творчество встречается с мастерством. Из огромного ассортимента деревянного, пластикового багета и сопутствующих материалов мы подбираем варианты оформления, учитывая ваши пожелания и особенности работы.</p>
+              <p className="text-muted-foreground">
+                С 2010 года мы помогаем клиентам сохранить и представить их ценные работы 
+                в самом выгодном свете. Используем только качественные материалы и проверенные временем техники.
               </p>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/files/b8391ce2-a7dd-4f8c-8dbd-1f8515f43cc6.jpg"
-                  alt="Багетная мастерская"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://cdn.poehali.dev/files/b8391ce2-a7dd-4f8c-8dbd-1f8515f43cc6.jpg"
+                alt="Багетная мастерская"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
             <div className="flex justify-center gap-12 pt-8">
@@ -352,94 +343,215 @@ const Index = () => {
             >
               <Icon name="ChevronRight" size={32} />
             </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacts" className="py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Контакты</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white/90 backdrop-blur">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Свяжитесь с нами</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent/10 p-3 rounded-full">
-                      <Icon name="MapPin" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-1">Адрес</p>
-                      <p className="text-muted-foreground">Краснобогатырская улица, 2 стр 2</p>
-                      <p className="text-muted-foreground">Москва, 107066</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent/10 p-3 rounded-full">
-                      <Icon name="Phone" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-1">Телефон</p>
-                      <a href="tel:+74956474433" className="text-accent hover:underline">+7 (495) 647-44-33</a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent/10 p-3 rounded-full">
-                      <Icon name="Mail" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-1">Email</p>
-                      <a href="mailto:bagetnaya-masterskaya@ya.ru" className="text-accent hover:underline break-all">
-                        bagetnaya-masterskaya@ya.ru
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-accent/10 p-3 rounded-full">
-                      <Icon name="Clock" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-1">Режим работы</p>
-                      <p className="text-muted-foreground">Ежедневно: 10:00 - 20:00</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="bg-white/90 backdrop-blur overflow-hidden">
-              <CardContent className="p-0 h-full">
-                <iframe 
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f8c13fc9c62fb5ec9a71ea854d5eaeae6c0af5e01a75f0cb9f1e5dca10bc8b1&amp;source=constructor" 
-                  width="100%" 
-                  height="100%" 
-                  frameBorder="0"
-                  className="min-h-[400px]"
-                  title="Карта местоположения"
-                ></iframe>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="mt-12 text-center">
-            <p className="text-lg mb-4">Мы в социальных сетях:</p>
-            <div className="flex justify-center gap-6">
-              <Link to="#" className="bg-accent/10 hover:bg-accent/20 p-4 rounded-full transition-colors">
-                <Icon name="Instagram" className="text-accent" size={28} />
-              </Link>
-              <Link to="#" className="bg-accent/10 hover:bg-accent/20 p-4 rounded-full transition-colors">
-                <Icon name="Facebook" className="text-accent" size={28} />
-              </Link>
-              <Link to="#" className="bg-accent/10 hover:bg-accent/20 p-4 rounded-full transition-colors">
-                <Icon name="MessageCircle" className="text-accent" size={28} />
-              </Link>
+            
+            <div className="flex justify-center gap-3 mt-8">
+              {galleryItems.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide 
+                      ? 'bg-accent w-8' 
+                      : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                  }`}
+                  aria-label={`Перейти к слайду ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-primary text-white py-8 px-4">
+      <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Отзывы клиентов</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="animate-fade-in">
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Отличная работа! Оформили семейную фотографию в багет за 30 минут. 
+                  Качество превосходное, рама идеально подобрана под интерьер."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Анна Петрова</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Профессиональный подход к каждой детали. Мастера помогли выбрать 
+                  идеальный багет для моей картины. Результат превзошёл ожидания!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Дмитрий Соколов</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-8">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "Огромный выбор багета! Нашли именно то, что искали для антикварного зеркала. 
+                  Работа выполнена безупречно, очень довольны!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Icon name="User" size={24} className="text-accent" />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Елена Волкова</div>
+                    <div className="text-sm text-muted-foreground">Москва</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-2xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Свяжитесь с нами</h2>
+          <p className="text-xl text-muted-foreground mb-12">Готовы обсудить ваш проект? Хотите рассчитать примерную стоимость оформления? Или у вас есть пример оформления работы? Позвоните или напишите нам, мы с радостью ответим на все ваши вопросы.</p>
+          <div className="space-y-6">
+            <div className="flex items-center justify-center gap-4">
+              <Icon name="Phone" size={24} className="text-accent" />
+              <a href="tel:+79653311228" className="text-xl hover:text-accent transition-colors">
+                +7 (965) 331-12-28
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <Icon name="Mail" size={24} className="text-accent" />
+              <a href="mailto:aktok@mail.ru" className="text-xl hover:text-accent transition-colors">
+                aktok@mail.ru
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <Icon name="MapPin" size={24} className="text-accent" />
+              <span className="text-xl">г. Мытищи, Олимпийский проспект 15, корпус 16</span>
+            </div>
+            <div className="mt-8">
+              <a 
+                href="https://t.me/mag_baget" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#0088cc] hover:bg-[#006ba8] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Icon name="Send" size={24} />
+                Написать в Telegram
+              </a>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center gap-4">
+                <Icon name="Clock" size={24} className="text-accent" />
+                <div className="text-xl">
+                  <div>Пн-Пт: 10:00-19:00</div>
+                  <div>Сб: 10:00-18:00</div>
+                  <div>Вс: выходной</div>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground italic">
+                * В праздничные дни режим работы может быть изменён
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 space-y-6">
+            <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+              <iframe 
+                src="https://yandex.ru/map-widget/v1/?ll=37.756597%2C55.921450&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjgyNzY3MRJt0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JzRi9GC0LjRidC4LCDQntC70LjQvNC_0LjQudGB0LrQuNC5INC_0YDQvtGB0L_QtdC60YIsIDE1IgoNODPeQRWO2FlC&z=17" 
+                width="100%" 
+                height="400" 
+                frameBorder="0"
+                title="Карта проезда"
+                className="border-0"
+              />
+            </div>
+            <a 
+              href="https://yandex.ru/maps/?rtext=~55.921450,37.756597" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-accent hover:underline"
+            >
+              <Icon name="Navigation" size={20} />
+              Построить маршрут в Яндекс.Картах
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <a 
+        href="https://wa.me/79653311228" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
+        aria-label="Написать в WhatsApp"
+      >
+        <svg 
+          viewBox="0 0 24 24" 
+          fill="currentColor" 
+          className="w-8 h-8"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+
+      <footer className="bg-primary text-primary-foreground py-12 px-4">
         <div className="container mx-auto text-center">
-          <p className="mb-2">&copy; 2024 Магия Багета. Все права защищены.</p>
-          <p className="text-sm text-white/70">Профессиональное багетное оформление в Москве</p>
+          <h3 className="text-2xl font-bold mb-4">"Магия Багета" Багетная мастерская</h3>
+          <p className="text-primary-foreground/80 mb-6">
+            Искусство в каждой детали
+          </p>
+          <div className="flex justify-center gap-6">
+            <a href="#" className="hover:text-accent transition-colors">
+              <Icon name="Instagram" size={24} />
+            </a>
+            <a href="https://vk.com/magbaget" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.45 14.41c-.29.34-.85.72-1.37.72h-1.24c-.37 0-1.11-.1-1.95-.94-.67-.67-1.31-1.22-1.85-1.22-.14 0-.28.02-.4.07-.49.18-.69.85-.69 1.62 0 .37-.3.67-.67.67h-.73c-.82 0-3.33-.27-5.52-2.53-2.62-2.7-4.95-8.09-5.01-8.22-.19-.45.09-.68.48-.68h1.24c.4 0 .53.24.64.52.12.33 1.17 2.9 2.69 4.72.36.43.64.63.88.63.12 0 .24-.03.34-.1.52-.34.42-2.47.4-2.92 0-.19 0-1.05-.34-1.52-.22-.31-.61-.44-1.01-.52-.06-.02.07-.28.29-.4.47-.26 1.14-.31 1.89-.31h.41c.77.01 1 .06 1.29.13.6.14.6.52.55 1.9-.02.35-.03.74-.03 1.21 0 .1-.01.21-.01.32-.03.69-.06 1.47.37 1.78.09.06.21.09.34.09.22 0 .5-.15.94-.59 1.61-1.95 2.76-4.97 2.81-5.1.08-.15.25-.4.41-.48.09-.04.19-.06.29-.06h1.24c.47 0 .76.21.64.63-.15.54-1.88 4.28-2.1 4.66-.19.31-.25.44 0 .79.18.26.79.77 1.19 1.23.73.82 1.3 1.51 1.45 1.99.16.47-.07.71-.59.71z"/>
+              </svg>
+            </a>
+          </div>
+          <div className="flex justify-center gap-6 mt-8">
+            <Link to="/privacy" className="hover:text-accent transition-colors text-sm">
+              Политика конфиденциальности
+            </Link>
+            <Link to="/terms" className="hover:text-accent transition-colors text-sm">
+              Пользовательское соглашение
+            </Link>
+          </div>
+          <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-sm text-primary-foreground/60">
+            <p className="mb-2">© 2025 "Магия Багета". Все права защищены.</p>
+            <p>ИП Лукинский Антон Эдуардович ОГРНИП 323508100708727</p>
+          </div>
         </div>
       </footer>
     </div>
