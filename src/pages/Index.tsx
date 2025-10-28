@@ -92,8 +92,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b bg-cover bg-center relative" style={{ backgroundImage: "url('https://cdn.poehali.dev/files/68b7e087-2703-47e5-aa78-0d4c266f8c19.jpg')" }}>
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
+        <nav className="container mx-auto px-4 py-4 flex items-center justify-between relative z-10">
           <div className="flex items-center gap-3">
             <img 
               src="https://cdn.poehali.dev/files/40a4138e-6e31-4536-a1e6-cbdf5428848d.png" 
@@ -112,6 +113,11 @@ const Index = () => {
             <a href="#contacts" className="hover:text-accent transition-colors">Контакты</a>
           </div>
         </nav>
+        <Link to="/contacts">
+          <Button variant="default" size="lg" className="fixed bottom-8 right-8 z-50 shadow-2xl hover:shadow-accent/50 transition-all">
+            Связаться с нами
+          </Button>
+        </Link>
       </header>
 
       <section className="pt-32 pb-20 px-4">
