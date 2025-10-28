@@ -115,7 +115,7 @@ const Index = () => {
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
             <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
-            <a href="#about" className="hover:text-accent transition-colors">О нас</a>
+            <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium">О нас</a>
             <a href="#contacts" className="hover:text-accent transition-colors">Контакты</a>
           </div>
         </nav>
