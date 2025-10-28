@@ -43,7 +43,14 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold">Багетная Мастерская</h1>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/9618b898-1464-41a0-8d73-f79aee6357d3.jpg" 
+              alt="Логотип" 
+              className="h-10 w-10 object-contain"
+            />
+            <h1 className="text-2xl font-bold">Багетная Мастерская</h1>
+          </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors">Услуги</a>
             <a href="#gallery" className="hover:text-accent transition-colors">Примеры работ</a>
