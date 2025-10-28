@@ -69,7 +69,7 @@ const Index = () => {
       description: "Элегантная деревянная рама"
     },
     {
-      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/2486f7cf-53f8-437a-92e7-290b126f3b9c.jpg",
+      image: "https://cdn.poehali.dev/files/ec5782d5-84d8-4e2e-9ec4-78c281f94109.jpg",
       title: "Православная икона",
       description: "Традиционное оформление с орнаментом"
     },
