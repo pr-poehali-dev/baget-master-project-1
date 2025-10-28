@@ -45,11 +45,11 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/9618b898-1464-41a0-8d73-f79aee6357d3.jpg" 
-              alt="Логотип" 
-              className="h-10 w-10 object-contain"
+              src="https://cdn.poehali.dev/files/40a4138e-6e31-4536-a1e6-cbdf5428848d.png" 
+              alt="Магия Багета" 
+              className="h-12 w-12 object-contain"
             />
-            <h1 className="text-2xl font-bold">Багетная Мастерская</h1>
+            <h1 className="text-2xl font-bold">Магия Багета</h1>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="hover:text-accent transition-colors">Услуги</a>
@@ -187,7 +187,7 @@ const Index = () => {
 
       <footer className="bg-primary text-primary-foreground py-12 px-4">
         <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4">Багетная Мастерская</h3>
+          <h3 className="text-2xl font-bold mb-4">Магия Багета</h3>
           <p className="text-primary-foreground/80 mb-6">
             Искусство в каждой детали
           </p>
@@ -203,7 +203,7 @@ const Index = () => {
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-sm text-primary-foreground/60">
-            © 2024 Багетная Мастерская. Все права защищены.
+            © 2024 Магия Багета. Все права защищены.
           </div>
         </div>
       </footer>
