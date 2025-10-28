@@ -286,43 +286,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">До и после</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="space-y-4 animate-fade-in">
-              <div className="relative group">
-                <img 
-                  src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/ea8c84e0-dc59-47be-9fc8-47aed1c4c54a.jpg"
-                  alt="После оформления"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">До</div>
-              </div>
-              <p className="text-center text-muted-foreground">
-                Классическая живопись в элегантном багете
-              </p>
-            </div>
-
-            <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.15s' }}>
-              <div className="relative group">
-                <img 
-                  src="https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/10081c46-9ed8-4b99-bf50-29e4b0ff29a3.jpg"
-                  alt="После оформления"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-full font-semibold">
-                  После
-                </div>
-              </div>
-              <p className="text-center text-muted-foreground">
-                Современная фотография в минималистичной раме
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="contacts" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Свяжитесь с нами</h2>
