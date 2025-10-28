@@ -305,8 +305,8 @@ const Index = () => {
           <div className="space-y-6">
             <div className="flex items-center justify-center gap-4">
               <Icon name="Phone" size={24} className="text-accent" />
-              <a href="tel:+79991234567" className="text-xl hover:text-accent transition-colors">
-                +7 (999) 123-45-67
+              <a href="tel:+79653311228" className="text-xl hover:text-accent transition-colors">
+                +7 (965) 331-12-28
               </a>
             </div>
             <div className="flex items-center justify-center gap-4">
@@ -327,7 +327,7 @@ const Index = () => {
       </section>
 
       <a 
-        href="https://wa.me/79991234567" 
+        href="https://wa.me/79653311228" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
