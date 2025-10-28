@@ -317,12 +317,33 @@ const Index = () => {
             </div>
             <div className="flex items-center justify-center gap-4">
               <Icon name="MapPin" size={24} className="text-accent" />
-              <span className="text-xl">г. Москва, ул. Художественная, 12</span>
+              <span className="text-xl">г. Мытищи, Олимпийский проспект 15, корпус 16</span>
             </div>
           </div>
-          <Button size="lg" className="mt-12 text-lg px-8 py-6">
-            Записаться на консультацию
-          </Button>
+          <div className="mt-12 space-y-6">
+            <Button size="lg" className="text-lg px-8 py-6">
+              Записаться на консультацию
+            </Button>
+            <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+              <iframe 
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f8e3c8e7d0f8e3c8e7d0f8e3c8e7d0f&source=constructor" 
+                width="100%" 
+                height="400" 
+                frameBorder="0"
+                title="Карта проезда"
+                className="border-0"
+              />
+            </div>
+            <a 
+              href="https://yandex.ru/maps/?rtext=~55.912499,37.735830" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-accent hover:underline"
+            >
+              <Icon name="Navigation" size={20} />
+              Построить маршрут в Яндекс.Картах
+            </a>
+          </div>
         </div>
       </section>
 

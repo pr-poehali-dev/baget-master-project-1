@@ -127,7 +127,7 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold text-foreground mb-4">11. Контактная информация</h2>
             <ul className="list-none pl-0 space-y-1">
-              <li>Адрес: г. Москва, ул. Художественная, 12</li>
+              <li>Адрес: г. Мытищи, Олимпийский проспект 15, корпус 16</li>
               <li>Телефон: +7 (965) 331-12-28</li>
               <li>Email: info@baget.ru</li>
             </ul>
