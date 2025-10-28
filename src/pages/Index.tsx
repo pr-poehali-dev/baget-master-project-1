@@ -91,12 +91,9 @@ const Index = () => {
           <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Искусство<br />оформления
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
-            Заказать консультацию
-          </Button>
         </div>
       </section>
 
@@ -334,9 +331,6 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-12 space-y-6">
-            <Button size="lg" className="text-lg px-8 py-6">
-              Записаться на консультацию
-            </Button>
             <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
               <iframe 
                 src="https://yandex.ru/map-widget/v1/?ll=37.756597%2C55.921450&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjgyNzY3MRJt0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JzRi9GC0LjRidC4LCDQntC70LjQvNC_0LjQudGB0LrQuNC5INC_0YDQvtGB0L_QtdC60YIsIDE1IgoNODPeQRWO2FlC&z=17" 
