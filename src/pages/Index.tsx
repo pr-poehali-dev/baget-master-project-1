@@ -128,10 +128,10 @@ const Index = () => {
 
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center animate-fade-in">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-center text-red-900">
             Искусство<br />оформления
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства. 
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto font-medium text-zinc-900">Превращаем ваши картины, вышивки, алмазные мозаики, фотографии и зеркала в произведения искусства. 
 Самый большой выбор багета. Самые короткие сроки оформления. Самые честные цены.</p>
         </div>
       </section>
