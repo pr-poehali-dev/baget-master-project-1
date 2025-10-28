@@ -319,9 +319,18 @@ const Index = () => {
               <Icon name="MapPin" size={24} className="text-accent" />
               <span className="text-xl">г. Мытищи, Олимпийский проспект 15, корпус 16</span>
             </div>
-            <div className="flex items-center justify-center gap-4">
-              <Icon name="Clock" size={24} className="text-accent" />
-              <span className="text-xl">Пн-Пт: 10:00-19:00, Сб-Вс: 10:00-17:00</span>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center gap-4">
+                <Icon name="Clock" size={24} className="text-accent" />
+                <div className="text-xl">
+                  <div>Пн-Пт: 10:00-19:00</div>
+                  <div>Сб: 10:00-18:00</div>
+                  <div>Вс: выходной</div>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground italic">
+                * В праздничные дни режим работы может быть изменён
+              </p>
             </div>
           </div>
           <div className="mt-12 space-y-6">
