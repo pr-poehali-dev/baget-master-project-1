@@ -64,7 +64,7 @@ const Index = () => {
       description: "Изготовление и оформление зеркал"
     },
     {
-      image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/4eca7ed4-155b-4de1-99b0-b4c20ae6c414.jpg",
+      image: "https://cdn.poehali.dev/files/8e49e163-c6de-4fb6-bdab-e39b5f8f2ed7.jpg",
       title: "Вышивка крестом",
       description: "Элегантная деревянная рама"
     },
