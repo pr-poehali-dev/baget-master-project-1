@@ -161,7 +161,7 @@ const Index = () => {
 
       <section id="gallery" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Примеры оформления</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-900">Примеры оформления</h2>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             {gallery.map((item, index) => (
               <div 
