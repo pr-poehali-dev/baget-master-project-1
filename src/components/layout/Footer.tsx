@@ -27,7 +27,7 @@ const Footer = () => {
             <span>•</span>
             <a href="/terms" className="hover:text-accent transition-colors underline">Пользовательское соглашение</a>
           </div>
-          <p>© 2024 Магия Багета. Все права защищены.</p>
+          <p>© 2025 Магия Багета. Все права защищены.</p>
           <p>ИП Лукинский Антон Эдуардович<br />ОГРНИП 323508100708727</p>
         </div>
       </div>
