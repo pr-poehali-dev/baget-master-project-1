@@ -389,7 +389,7 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Отзывы клиентов</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-900">Отзывы клиентов</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="animate-fade-in">
               <CardContent className="p-8">
