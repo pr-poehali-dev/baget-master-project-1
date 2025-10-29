@@ -25,7 +25,8 @@ const Index = () => {
     { image: "https://cdn.poehali.dev/files/5cbe3455-3ebe-4580-9a1f-8d87987e2a15.jpg", alt: "Акварельная иллюстрация кита в чёрной раме", title: "Акварельная живопись" },
     { image: "https://cdn.poehali.dev/files/c752dd21-8e48-4b74-9508-91ca88140894.jpg", alt: "Кружевная салфетка на синем фоне в белой раме", title: "Оформление кружева" },
     { image: "https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg", alt: "Реставрация старинной иконы", title: "Реставрация икон" },
-    { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" }
+    { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" },
+    { image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg", alt: "Оформление подарочной карты", title: "Оформление подарочной карты" }
   ];
 
   const nextSlide = () => {
@@ -142,11 +143,6 @@ const Index = () => {
       image: "https://cdn.poehali.dev/files/fe8791c8-c35f-46b7-80ef-a7c592616362.jpg",
       title: "Семейное фото",
       description: "Креативная галерея на прищепках в золотой раме"
-    },
-    {
-      image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg",
-      title: "Оформление подарочной карты",
-      description: "Оформление подарочной карты"
     }
   ];
 
