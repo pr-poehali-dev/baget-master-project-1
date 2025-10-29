@@ -202,7 +202,7 @@ const Articles = () => {
             <div>
               <h3 className="font-semibold text-lg mb-4 text-red-900">Магия Багета</h3>
               <p className="text-sm text-muted-foreground">
-                Профессиональное багетное оформление в Москве с 2010 года
+                Профессиональное багетное оформление в Москве и Московской области с 2010 года
               </p>
             </div>
             <div>
