@@ -23,9 +23,9 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-primary-foreground/60 text-sm space-y-3">
           <div className="flex justify-center gap-4 text-xs">
-            <a href="#privacy" className="hover:text-accent transition-colors underline">Политика конфиденциальности</a>
+            <a href="/privacy-policy" className="hover:text-accent transition-colors underline">Политика конфиденциальности</a>
             <span>•</span>
-            <a href="#terms" className="hover:text-accent transition-colors underline">Пользовательское соглашение</a>
+            <a href="/terms" className="hover:text-accent transition-colors underline">Пользовательское соглашение</a>
           </div>
           <p>© 2024 Магия Багета. Все права защищены.</p>
           <p>ИП Лукинский Антон Эдуардович<br />ОГРНИП 323508100708727</p>
