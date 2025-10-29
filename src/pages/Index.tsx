@@ -142,6 +142,11 @@ const Index = () => {
       image: "https://cdn.poehali.dev/files/fe8791c8-c35f-46b7-80ef-a7c592616362.jpg",
       title: "Семейное фото",
       description: "Креативная галерея на прищепках в золотой раме"
+    },
+    {
+      image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg",
+      title: "Оформление подарочной карты",
+      description: "Оформление подарочной карты"
     }
   ];
 
