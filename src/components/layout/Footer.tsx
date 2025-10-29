@@ -21,9 +21,10 @@ const Footer = () => {
             <Icon name="Send" size={24} />
           </a>
         </div>
-        <p className="text-primary-foreground/60 text-sm mt-8">
-          © 2024 Магия Багета. Все права защищены.
-        </p>
+        <div className="mt-8 text-primary-foreground/60 text-sm space-y-2">
+          <p>© 2024 Магия Багета. Все права защищены.</p>
+          <p>ИП Лукинский Антон Эдуардович<br />ОГРНИП 323508100708727</p>
+        </div>
       </div>
     </footer>
   );
