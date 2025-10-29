@@ -10,7 +10,7 @@ const Index = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const galleryItems = [
-    { image: "https://cdn.poehali.dev/files/32a3e740-baff-4e7d-b69d-cc8612a02bd4.jpg", alt: "Вышивка в классическом багете", title: "Классическое оформление" },
+    { image: "https://cdn.poehali.dev/files/32a3e740-baff-4e7d-b69d-cc8612a02bd4.jpg", alt: "Вышивка в классическом багете", title: "Классическое оформление вышивки с парспарту" },
     { image: "https://cdn.poehali.dev/projects/443fbb86-47b1-4a70-9c17-62afaf04e5ae/files/922ff82a-fcc9-446d-a3bb-0b2653423f24.jpg", alt: "Оформленная работа 2", title: "Современный стиль" },
     { image: "https://cdn.poehali.dev/files/04d55c82-94e2-4600-9b2f-e3ac08f759be.jpg", alt: "Натюрморт в золотом багете", title: "Индивидуальные решения" },
     { image: "https://cdn.poehali.dev/files/d31feca3-7949-4619-841d-e4a63a5164ea.jpg", alt: "Обложки TIME в музейном оформлении", title: "Музейное качество" },
