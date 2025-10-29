@@ -157,6 +157,7 @@ const Index = () => {
             <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
             <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
             <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Галерея</a>
+            <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium">Про оформление</Link>
             <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium">О нас</a>
             <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
           </div>
@@ -192,6 +193,13 @@ const Index = () => {
               >
                 Галерея
               </a>
+              <Link 
+                to="/articles" 
+                className="hover:text-accent transition-colors text-red-900 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Про оформление
+              </Link>
               <a 
                 href="#about" 
                 className="hover:text-accent transition-colors text-red-900 font-medium py-2"
