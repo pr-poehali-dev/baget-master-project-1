@@ -297,7 +297,7 @@ const Index = () => {
 
       <section id="about" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О мастерской</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-red-900">О мастерской</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
             <div className="space-y-6 text-lg leading-relaxed">
               <p>Наша багетная мастерская — это место, где искусство и творчество встречается с мастерством. Из огромного ассортимента деревянного, пластикового багета и сопутствующих материалов мы подбираем варианты оформления, учитывая ваши пожелания и особенности работы.</p>
