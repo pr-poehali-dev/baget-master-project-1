@@ -275,7 +275,7 @@ const Index = () => {
             {gallery.map((item, index) => (
               <div 
                 key={index} 
-                className="group cursor-pointer animate-fade-in"
+                className="group cursor-pointer animate-fade-in hover:shadow-[0_0_20px_rgba(185,28,28,0.5)] transition-all duration-300 hover:-translate-y-2 rounded-lg p-4 border-2 border-transparent hover:border-red-700"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="relative overflow-hidden rounded-lg mb-4 aspect-square">
