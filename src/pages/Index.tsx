@@ -549,7 +549,7 @@ const Index = () => {
         </svg>
       </a>
 
-      <footer className="bg-primary text-primary-foreground py-12 px-4">
+      <footer className="text-primary-foreground py-12 px-4 bg-red-900">
         <div className="container mx-auto text-center">
           <h3 className="text-2xl font-bold mb-4">"Магия Багета" Багетная мастерская</h3>
           <p className="text-primary-foreground/80 mb-6">
