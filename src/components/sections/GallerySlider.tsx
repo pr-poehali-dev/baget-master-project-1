@@ -17,7 +17,7 @@ const GallerySlider = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-4">Галерея</h2>
-          <p className="text-muted-foreground">Наши работы говорят сами за себя</p>
+          <p className="text-muted-foreground">Лишь некоторые примеры оформления</p>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl bg-white group">
