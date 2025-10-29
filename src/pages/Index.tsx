@@ -465,7 +465,7 @@ const Index = () => {
 
       <section id="contacts" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Свяжитесь с нами</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-red-900">Свяжитесь с нами</h2>
           <p className="text-xl text-muted-foreground mb-12">Готовы обсудить ваш проект? Хотите рассчитать примерную стоимость оформления? Или у вас есть пример оформления работы? Позвоните или напишите нам, мы с радостью ответим на все ваши вопросы.</p>
           <div className="space-y-6">
             <div className="flex items-center justify-center gap-4">
