@@ -197,15 +197,15 @@ const Articles = () => {
               <div className="space-y-2 text-sm">
                 <p className="flex items-center gap-2">
                   <Icon name="Phone" size={16} className="text-red-700" />
-                  <span>+7 (999) 123-45-67</span>
+                  <a href="tel:+79653311228" className="hover:text-accent transition-colors">+7 (965) 331-12-28</a>
                 </p>
                 <p className="flex items-center gap-2">
                   <Icon name="Mail" size={16} className="text-red-700" />
-                  <span>info@magiabageta.ru</span>
+                  <a href="mailto:aktok@mail.ru" className="hover:text-accent transition-colors">aktok@mail.ru</a>
                 </p>
                 <p className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} className="text-red-700" />
-                  <span>г. Москва, ул. Примерная, д. 1</span>
+                  <span>г. Мытищи, Олимпийский проспект 15, корпус 16</span>
                 </p>
               </div>
             </div>
