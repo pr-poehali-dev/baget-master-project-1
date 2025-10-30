@@ -22,5 +22,6 @@ export const galleryItems: GalleryItem[] = [
   { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" },
   { image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg", alt: "Оформление подарочной карты", title: "Оформление подарочной карты" },
   { image: "https://cdn.poehali.dev/files/91314da4-d4cd-44ee-b839-27d5f87d9e38.jpg", alt: "Вышивка ангела в круглой белой раме", title: "Вышивка в круглой раме" },
-  { image: "https://cdn.poehali.dev/files/ad595213-e0be-40f1-af6b-f69ee79c9c28.jpg", alt: "Коллаж из долларовых купюр в серой раме", title: "Оригинальное оформление банкнот" }
+  { image: "https://cdn.poehali.dev/files/ad595213-e0be-40f1-af6b-f69ee79c9c28.jpg", alt: "Коллаж из долларовых купюр в серой раме", title: "Оригинальное оформление банкнот" },
+  { image: "https://cdn.poehali.dev/files/7c626b78-3a37-4908-af73-c55691336c96.jpg", alt: "Диптих с японской живописью в золотых рамах", title: "Японская живопись" }
 ];
