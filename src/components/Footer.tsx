@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="flex justify-center gap-6 text-sm">
           <Link to="/privacy" className="hover:text-red-700 transition-colors">Политика конфиденциальности</Link>
           <Link to="/terms" className="hover:text-red-700 transition-colors">Условия использования</Link>
+          <Link to="/payment-delivery" className="hover:text-red-700 transition-colors">Оплата и доставка</Link>
         </div>
       </div>
     </footer>
