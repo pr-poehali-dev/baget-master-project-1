@@ -101,7 +101,17 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">8. Хранение работ</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">8. Доставка</h2>
+            <p>
+              При организации доставки с использованием сервисов Яндекс Go или иных курьерских служб 
+              багетная мастерская не несет ответственности за сохранность изделий и работ, 
+              а также за несоблюдение графика и сроков доставки заказов. Ответственность за доставку 
+              в таких случаях несет привлеченная служба доставки.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">9. Хранение работ</h2>
             <p>
               Готовые работы хранятся в мастерской бесплатно в течение 30 дней. 
               После истечения этого срока может взиматься плата за хранение в размере 50 рублей в день.
@@ -109,7 +119,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">9. Форс-мажор</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">10. Форс-мажор</h2>
             <p>
               Стороны освобождаются от ответственности за невыполнение обязательств, 
               вызванное обстоятельствами непреодолимой силы (пожар, наводнение, военные действия и т.п.).
@@ -117,7 +127,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">10. Разрешение споров</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">11. Разрешение споров</h2>
             <p>
               Все споры и разногласия решаются путем переговоров. 
               При невозможности достижения согласия спор передается в суд в соответствии с законодательством РФ.
@@ -125,7 +135,7 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-foreground mb-4">11. Контактная информация</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">12. Контактная информация</h2>
             <ul className="list-none pl-0 space-y-1">
               <li>Адрес: г. Мытищи, Олимпийский проспект 15, корпус 16</li>
               <li>Телефон: +7 (965) 331-12-28</li>
