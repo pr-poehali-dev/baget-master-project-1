@@ -26,5 +26,5 @@ export const galleryItems: GalleryItem[] = [
   { image: "https://cdn.poehali.dev/files/7c626b78-3a37-4908-af73-c55691336c96.jpg", alt: "Диптих с японской живописью в золотых рамах", title: "Японская живопись" },
   { image: "https://cdn.poehali.dev/files/2e5827a9-2081-4e2a-b916-abacc390b98b.jpg", alt: "Белая шкатулка с вышивкой маяка", title: "Изготовление шкатулок" },
   { image: "https://cdn.poehali.dev/files/150520a0-4b28-4228-98ec-eb85087e353a.jpg", alt: "Портрет трехцветной кошки на холсте", title: "Фотопечать на холсте с постобработкой" },
-  { image: "https://cdn.poehali.dev/files/1b55ed8f-644e-4326-bb3e-39d00652d1b1.jpg", alt: "Футболка сборной Германии с автографом в раме", title: "Оформление спортивной формы" }
+  { image: "https://cdn.poehali.dev/files/1b55ed8f-644e-4326-bb3e-39d00652d1b1.jpg", alt: "Джерси легенды хоккея Павла Буре с автографом", title: "Джерси легенды хоккея Павла Буре с автографом" }
 ];
