@@ -20,5 +20,6 @@ export const galleryItems: GalleryItem[] = [
   { image: "https://cdn.poehali.dev/files/c752dd21-8e48-4b74-9508-91ca88140894.jpg", alt: "Кружевная салфетка на синем фоне в белой раме", title: "Оформление кружева" },
   { image: "https://cdn.poehali.dev/files/429cd5f9-4d1b-4e53-9587-8790fe3f1e2d.jpg", alt: "Реставрация старинной иконы", title: "Реставрация икон" },
   { image: "https://cdn.poehali.dev/files/5af37482-2bbb-444d-8557-ac24baba220e.jpg", alt: "Икона с серебряным окладом в резном багете", title: "Оформление икон" },
-  { image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg", alt: "Оформление подарочной карты", title: "Оформление подарочной карты" }
+  { image: "https://cdn.poehali.dev/files/d77ba1bd-0735-4e8d-bb2c-0da707a35c83.jpg", alt: "Оформление подарочной карты", title: "Оформление подарочной карты" },
+  { image: "https://cdn.poehali.dev/files/91314da4-d4cd-44ee-b839-27d5f87d9e38.jpg", alt: "Вышивка ангела в круглой белой раме", title: "Вышивка в круглой раме" }
 ];
