@@ -74,18 +74,40 @@ const GallerySlider = () => {
           onClick={() => setIsModalOpen(false)}
         >
           <button 
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
             onClick={() => setIsModalOpen(false)}
             aria-label="Закрыть"
           >
             <Icon name="X" size={32} />
           </button>
-          <img 
-            src={galleryItems[currentSlide].image} 
-            alt={galleryItems[currentSlide].alt}
-            className="max-w-full max-h-full object-contain"
-            onClick={(e) => e.stopPropagation()}
-          />
+          
+          <button 
+            onClick={(e) => { e.stopPropagation(); prevSlide(); setIsAutoPlaying(false); }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all z-10"
+            aria-label="Предыдущее изображение"
+          >
+            <Icon name="ChevronLeft" size={40} className="text-white" />
+          </button>
+          
+          <button 
+            onClick={(e) => { e.stopPropagation(); nextSlide(); setIsAutoPlaying(false); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all z-10"
+            aria-label="Следующее изображение"
+          >
+            <Icon name="ChevronRight" size={40} className="text-white" />
+          </button>
+          
+          <div className="relative max-w-full max-h-full">
+            <img 
+              src={galleryItems[currentSlide].image} 
+              alt={galleryItems[currentSlide].alt}
+              className="max-w-full max-h-[90vh] object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+              <h3 className="text-white text-xl font-bold text-center">{galleryItems[currentSlide].title}</h3>
+            </div>
+          </div>
         </div>
       )}
     </section>
