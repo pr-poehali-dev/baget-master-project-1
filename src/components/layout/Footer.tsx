@@ -26,6 +26,8 @@ const Footer = () => {
             <a href="/privacy-policy" className="hover:text-accent transition-colors underline">Политика конфиденциальности</a>
             <span>•</span>
             <a href="/terms" className="hover:text-accent transition-colors underline">Пользовательское соглашение</a>
+            <span>•</span>
+            <a href="/payment-delivery" className="hover:text-accent transition-colors underline">Оплата и доставка</a>
           </div>
           <p>© 2025 Магия Багета. Все права защищены.</p>
           <p>ИП Лукинский Антон Эдуардович<br />ОГРНИП 323508100708727</p>
