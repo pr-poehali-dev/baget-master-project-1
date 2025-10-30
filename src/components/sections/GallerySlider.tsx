@@ -1,6 +1,7 @@
 import Icon from "@/components/ui/icon";
 import { useGallerySlider } from "@/hooks/useGallerySlider";
 import { galleryItems } from "@/data/galleryItems";
+import { useState } from "react";
 
 const GallerySlider = () => {
   const { 
@@ -11,6 +12,8 @@ const GallerySlider = () => {
     prevSlide, 
     goToSlide 
   } = useGallerySlider({ totalItems: galleryItems.length });
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section id="gallery" className="py-20 px-4 bg-muted/30">
@@ -24,7 +27,8 @@ const GallerySlider = () => {
             <img 
               src={galleryItems[currentSlide].image} 
               alt={galleryItems[currentSlide].alt}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain cursor-pointer"
+              onClick={() => setIsModalOpen(true)}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
               <h3 className="text-white text-2xl font-bold mb-2">{galleryItems[currentSlide].title}</h3>
@@ -63,6 +67,27 @@ const GallerySlider = () => {
           </div>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setIsModalOpen(false)}
+            aria-label="Закрыть"
+          >
+            <Icon name="X" size={32} />
+          </button>
+          <img 
+            src={galleryItems[currentSlide].image} 
+            alt={galleryItems[currentSlide].alt}
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 };
