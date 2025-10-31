@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { services } from "@/data/services";
 
 const ServicesSection = () => {
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+
   return (
     <section id="services" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
@@ -11,8 +14,11 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-[0_0_20px_rgba(185,28,28,0.5)] transition-all duration-300 hover:-translate-y-2 animate-scale-in border-2 hover:border-red-700"
+              className={`hover:shadow-[0_0_20px_rgba(185,28,28,0.5)] transition-all duration-300 hover:-translate-y-2 animate-scale-in border-2 hover:border-red-700 cursor-pointer ${
+                activeCard === index ? 'bg-pink-100 border-pink-500' : ''
+              }`}
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => setActiveCard(activeCard === index ? null : index)}
             >
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
