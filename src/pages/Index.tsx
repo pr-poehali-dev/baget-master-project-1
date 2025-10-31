@@ -20,8 +20,8 @@ const Index = () => {
       <PageBackground />
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <HeroSection />
-      <AboutSection />
       <ServicesSection />
+      <AboutSection />
       <WorksSection />
       <GallerySlider />
       <TestimonialsSection />
