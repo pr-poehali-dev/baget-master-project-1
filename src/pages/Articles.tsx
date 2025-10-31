@@ -259,7 +259,7 @@ const Articles = () => {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Магия Багета. Все права защищены.</p>
+            <p>© 2025 Магия Багета. Все права защищены.</p>
           </div>
         </div>
       </footer>
