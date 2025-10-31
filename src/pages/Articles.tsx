@@ -213,7 +213,7 @@ const Articles = () => {
               <p className="text-muted-foreground mb-6">
                 Наши специалисты с радостью проконсультируют вас по всем вопросам оформления
               </p>
-              <Link to="/#contacts">
+              <Link to="/#contact">
                 <Button className="bg-red-700 hover:bg-red-800">
                   Связаться с нами
                 </Button>
