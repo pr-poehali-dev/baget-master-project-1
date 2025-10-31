@@ -25,7 +25,7 @@ const AboutSection = () => {
           </div>
           <div className="relative">
             <img 
-              src="https://cdn.poehali.dev/files/9a76ae31-5621-4f8a-ba52-894a9af11a38.jpg" 
+              src="https://cdn.poehali.dev/files/a9811cd4-213c-4c49-a6cf-bbeecc2800fe.jpg" 
               alt="Багетная мастерская Магия Багета"
               className="rounded-lg shadow-2xl w-full h-auto object-cover"
             />
