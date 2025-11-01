@@ -1,11 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Articles = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const contactsSection = document.getElementById('contacts');
+      if (contactsSection) {
+        contactsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   const articles = [
     {
@@ -213,11 +224,9 @@ const Articles = () => {
               <p className="text-muted-foreground mb-6">
                 Наши специалисты с радостью проконсультируют вас по всем вопросам оформления
               </p>
-              <Link to="/#contacts">
-                <Button className="bg-red-700 hover:bg-red-800">
-                  Связаться с нами
-                </Button>
-              </Link>
+              <Button className="bg-red-700 hover:bg-red-800" onClick={handleContactClick}>
+                Связаться с нами
+              </Button>
             </CardContent>
           </Card>
         </div>
