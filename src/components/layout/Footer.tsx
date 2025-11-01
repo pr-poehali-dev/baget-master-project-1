@@ -20,6 +20,11 @@ const Footer = () => {
           <a href="https://t.me/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
             <Icon name="Send" size={24} />
           </a>
+          <a href="https://ok.ru/group/70000033967526" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.372 0 12s5.373 12 12 12 12-5.372 12-12S18.627 0 12 0zm0 5.143a3.429 3.429 0 110 6.857 3.429 3.429 0 010-6.857zm5.486 9.914a8.571 8.571 0 01-4.629 2.486v2.743a.857.857 0 11-1.714 0v-2.743a8.571 8.571 0 01-4.629-2.486.857.857 0 111.2-1.228 6.857 6.857 0 008.572 0 .857.857 0 111.2 1.228z"/>
+            </svg>
+          </a>
         </div>
         <div className="mt-8 text-primary-foreground/60 text-sm space-y-3">
           <div className="flex justify-center gap-4 text-xs">
