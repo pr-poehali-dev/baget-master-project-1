@@ -9,7 +9,7 @@ const Footer = () => {
           Искусство в каждой детали
         </p>
         <div className="flex justify-center gap-6">
-          <a href="#" className="hover:text-accent transition-colors">
+          <a href="https://www.instagram.com/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
             <Icon name="Instagram" size={24} />
           </a>
           <a href="https://vk.com/magbaget" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
