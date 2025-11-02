@@ -44,5 +44,10 @@ export const worksGallery: WorkItem[] = [
     image: "https://cdn.poehali.dev/files/fe8791c8-c35f-46b7-80ef-a7c592616362.jpg",
     title: "Семейное фото",
     description: "Креативная галерея на прищепках в золотой раме"
+  },
+  {
+    image: "https://cdn.poehali.dev/files/935e74b3-a8a6-4963-9ca5-f84fd3812b02.jpg",
+    title: "Ремешок для фототехники",
+    description: "Ремешок для фототехники от Армы Грей"
   }
 ];
