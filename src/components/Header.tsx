@@ -27,7 +27,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</a>
           <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</a>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Про оформление</Link>
-          <a href="#contact" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</a>
+          <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</a>
         </div>
         <button 
           className="md:hidden"
@@ -44,7 +44,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             <a href="#works" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Примеры работ</a>
             <a href="#gallery" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Галерея</a>
             <Link to="/articles" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Про оформление</Link>
-            <a href="#contact" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Контакты</a>
+            <a href="#contacts" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Контакты</a>
           </div>
         </div>
       )}
