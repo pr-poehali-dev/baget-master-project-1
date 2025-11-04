@@ -11,7 +11,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b bg-cover bg-center relative" style={{ backgroundImage: "url('https://cdn.poehali.dev/files/9a76ae31-5621-4f8a-ba52-894a9af11a38.jpg')" }}>
       <div className="absolute inset-0 bg-white/75"></div>
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between relative z-10 flex-nowrap">
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <Link to="/" className="flex items-center gap-3 flex-shrink-0">
           <img 
             src="https://cdn.poehali.dev/files/40a4138e-6e31-4536-a1e6-cbdf5428848d.png" 
             alt="Магия Багета" 
@@ -21,13 +21,13 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             <h1 className="text-red-700 text-3xl lg:text-4xl whitespace-nowrap leading-none" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
             <p className="text-xs lg:text-sm text-muted-foreground font-semibold mx-0 text-center">Багетная мастерская</p>
           </div>
-        </div>
+        </Link>
         <div className="hidden md:flex gap-4 lg:gap-6 flex-nowrap items-center flex-shrink-0" style={{ fontSize: '14px' }}>
-          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Услуги</a>
-          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</a>
-          <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</a>
+          <Link to="/#services" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Услуги</Link>
+          <Link to="/#works" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</Link>
+          <Link to="/#gallery" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</Link>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Про оформление</Link>
-          <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</a>
+          <Link to="/#contacts" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</Link>
         </div>
         <button 
           className="md:hidden"
@@ -40,11 +40,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
       {mobileMenuOpen && (
         <div className="md:hidden border-t bg-background/95 backdrop-blur">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            <a href="#services" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Услуги</a>
-            <a href="#works" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Примеры работ</a>
-            <a href="#gallery" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Галерея</a>
+            <Link to="/#services" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Услуги</Link>
+            <Link to="/#works" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Примеры работ</Link>
+            <Link to="/#gallery" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Галерея</Link>
             <Link to="/articles" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Про оформление</Link>
-            <a href="#contacts" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Контакты</a>
+            <Link to="/#contacts" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Контакты</Link>
           </div>
         </div>
       )}
