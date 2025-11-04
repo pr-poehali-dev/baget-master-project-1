@@ -19,7 +19,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           />
           <div>
             <h1 className="text-red-700 text-4xl" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
-            <p className="text-sm text-muted-foreground font-semibold mx-0 text-center">Багетная мастерская</p>
+            <p className="text-muted-foreground font-semibold mx-0 text-center text-xs">Багетная мастерская</p>
           </div>
         </div>
         <div className="hidden md:flex gap-8">
