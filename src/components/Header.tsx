@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 interface HeaderProps {
@@ -7,6 +7,25 @@ interface HeaderProps {
 }
 
 const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSectionClick = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b bg-cover bg-center relative" style={{ backgroundImage: "url('https://cdn.poehali.dev/files/9a76ae31-5621-4f8a-ba52-894a9af11a38.jpg')" }}>
       <div className="absolute inset-0 bg-white/75"></div>
@@ -23,11 +42,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           </div>
         </Link>
         <div className="hidden md:flex gap-4 lg:gap-6 flex-nowrap items-center flex-shrink-0" style={{ fontSize: '14px' }}>
-          <Link to="/#services" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Услуги</Link>
-          <Link to="/#works" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</Link>
-          <Link to="/#gallery" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</Link>
+          <button onClick={() => handleSectionClick('services')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Услуги</button>
+          <button onClick={() => handleSectionClick('works')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</button>
+          <button onClick={() => handleSectionClick('gallery')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</button>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Про оформление</Link>
-          <Link to="/#contacts" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</Link>
+          <button onClick={() => handleSectionClick('contacts')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</button>
         </div>
         <button 
           className="md:hidden"
@@ -40,11 +59,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
       {mobileMenuOpen && (
         <div className="md:hidden border-t bg-background/95 backdrop-blur">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            <Link to="/#services" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Услуги</Link>
-            <Link to="/#works" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Примеры работ</Link>
-            <Link to="/#gallery" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Галерея</Link>
+            <button onClick={() => { handleSectionClick('services'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Услуги</button>
+            <button onClick={() => { handleSectionClick('works'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Примеры работ</button>
+            <button onClick={() => { handleSectionClick('gallery'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Галерея</button>
             <Link to="/articles" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Про оформление</Link>
-            <Link to="/#contacts" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Контакты</Link>
+            <button onClick={() => { handleSectionClick('contacts'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Контакты</button>
           </div>
         </div>
       )}
