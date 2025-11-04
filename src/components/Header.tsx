@@ -46,6 +46,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           <button onClick={() => handleSectionClick('works')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Примеры работ</button>
           <button onClick={() => handleSectionClick('gallery')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Галерея</button>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Про оформление</Link>
+          <button onClick={() => handleSectionClick('about')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">О нас</button>
           <button onClick={() => handleSectionClick('contacts')} className="hover:text-accent transition-colors text-red-900 font-medium whitespace-nowrap">Контакты</button>
         </div>
         <button 
@@ -63,6 +64,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             <button onClick={() => { handleSectionClick('works'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Примеры работ</button>
             <button onClick={() => { handleSectionClick('gallery'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Галерея</button>
             <Link to="/articles" className="hover:text-accent transition-colors" onClick={() => setMobileMenuOpen(false)}>Про оформление</Link>
+            <button onClick={() => { handleSectionClick('about'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">О нас</button>
             <button onClick={() => { handleSectionClick('contacts'); setMobileMenuOpen(false); }} className="hover:text-accent transition-colors text-left">Контакты</button>
           </div>
         </div>
