@@ -27,8 +27,8 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Примеры работ</a>
           <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Галерея</a>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Про оформление</Link>
-          <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium text-xs">О нас</a>
-          <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium text-xs">Контакты</a>
+          <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">О нас</a>
+          <a href="#contacts" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Контакты</a>
         </div>
         <button 
           className="md:hidden text-red-900 transition-transform duration-300" 
