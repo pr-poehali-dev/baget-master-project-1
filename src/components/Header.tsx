@@ -18,7 +18,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             className="h-20 w-20 object-contain"
           />
           <div>
-            <h1 className="text-red-700 text-5xl" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
+            <h1 className="text-red-700 text-5xl whitespace-nowrap" style={{ fontFamily: "'Great Vibes', cursive" }}>Магия Багета</h1>
             <p className="text-sm text-muted-foreground font-semibold mx-0 text-center">Багетная мастерская</p>
           </div>
         </div>
