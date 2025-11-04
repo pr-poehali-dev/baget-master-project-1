@@ -16,7 +16,7 @@ const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative page-transition">
       <PageBackground />
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <HeroSection />

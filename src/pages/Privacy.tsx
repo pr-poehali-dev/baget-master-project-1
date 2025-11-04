@@ -6,7 +6,7 @@ const Privacy = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background page-transition">
       <header className="border-b">
         <nav className="container mx-auto px-4 py-4">
           <Button variant="ghost" onClick={() => navigate('/')} className="gap-2">

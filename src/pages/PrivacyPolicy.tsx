@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col page-transition">
       <Header />
       <main className="flex-1 py-20 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
