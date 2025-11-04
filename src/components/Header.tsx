@@ -23,11 +23,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           </div>
         </div>
         <div className="hidden md:flex gap-2 lg:gap-4 xl:gap-6 flex-nowrap items-center flex-shrink-0">
-          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap">Услуги</a>
-          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap">Примеры работ</a>
-          <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap">Галерея</a>
-          <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap">Про оформление</Link>
-          <a href="#contact" className="hover:text-accent transition-colors text-red-900 font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap">Контакты</a>
+          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium text-xs whitespace-nowrap">Услуги</a>
+          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-xs whitespace-nowrap">Примеры работ</a>
+          <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium text-xs whitespace-nowrap">Галерея</a>
+          <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium text-xs whitespace-nowrap">Про оформление</Link>
+          <a href="#contact" className="hover:text-accent transition-colors text-red-900 font-medium text-xs whitespace-nowrap">Контакты</a>
         </div>
         <button 
           className="md:hidden"
