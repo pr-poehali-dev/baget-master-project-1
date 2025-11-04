@@ -23,8 +23,8 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
           </div>
         </div>
         <div className="hidden md:flex gap-8">
-          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Услуги</a>
-          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Примеры работ</a>
+          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium text-xs">Услуги</a>
+          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-xs">Примеры работ</a>
           <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Галерея</a>
           <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium text-sm">Про оформление</Link>
           <a href="#about" className="hover:text-accent transition-colors text-red-900 font-medium text-xs">О нас</a>
