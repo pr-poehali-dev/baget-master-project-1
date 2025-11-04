@@ -1,9 +1,10 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import Footer from "@/components/Footer";
 
 const Articles = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -191,46 +192,7 @@ const Articles = () => {
         </div>
       </main>
 
-      <footer className="bg-cover bg-center relative mt-16" style={{ backgroundImage: "url('https://cdn.poehali.dev/files/9a76ae31-5621-4f8a-ba52-894a9af11a38.jpg')" }}>
-        <div className="absolute inset-0 bg-white/75"></div>
-        <div className="container mx-auto px-4 py-12 relative z-10">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-red-900">Магия Багета</h3>
-              <p className="text-sm text-muted-foreground">
-                Профессиональное багетное оформление в Москве и Московской области с 2010 года
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-red-900">Контакты</h3>
-              <div className="space-y-2 text-sm">
-                <p className="flex items-center gap-2">
-                  <Icon name="Phone" size={16} className="text-red-700" />
-                  <a href="tel:+79653311228" className="hover:text-accent transition-colors">+7 (965) 331-12-28</a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <Icon name="Mail" size={16} className="text-red-700" />
-                  <a href="mailto:aktok@mail.ru" className="hover:text-accent transition-colors">aktok@mail.ru</a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <Icon name="MapPin" size={16} className="text-red-700" />
-                  <span>г. Мытищи, Олимпийский проспект 15, корпус 16</span>
-                </p>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-red-900">Информация</h3>
-              <div className="flex flex-col gap-2 text-sm">
-                <Link to="/privacy" className="hover:text-accent transition-colors text-red-800">Политика конфиденциальности</Link>
-                <Link to="/terms" className="hover:text-accent transition-colors text-red-800">Условия использования</Link>
-              </div>
-            </div>
-          </div>
-          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2025 Магия Багета. Все права защищены.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
