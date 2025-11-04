@@ -22,7 +22,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             <p className="text-sm text-muted-foreground font-semibold mx-0 text-center">Багетная мастерская</p>
           </div>
         </div>
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-4 lg:gap-8 flex-nowrap whitespace-nowrap">
           <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
           <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
           <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Галерея</a>
