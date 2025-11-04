@@ -22,12 +22,12 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) => {
             <p className="text-sm text-muted-foreground font-semibold mx-0 text-center">Багетная мастерская</p>
           </div>
         </div>
-        <div className="hidden md:flex gap-4 lg:gap-8 flex-nowrap whitespace-nowrap">
-          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium">Услуги</a>
-          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium">Примеры работ</a>
-          <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium">Галерея</a>
-          <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium">Про оформление</Link>
-          <a href="#contact" className="hover:text-accent transition-colors text-red-900 font-medium">Контакты</a>
+        <div className="hidden md:flex gap-3 lg:gap-6 flex-nowrap items-center">
+          <a href="#services" className="hover:text-accent transition-colors text-red-900 font-medium text-sm lg:text-base whitespace-nowrap">Услуги</a>
+          <a href="#works" className="hover:text-accent transition-colors text-red-900 font-medium text-sm lg:text-base whitespace-nowrap">Примеры работ</a>
+          <a href="#gallery" className="hover:text-accent transition-colors text-red-900 font-medium text-sm lg:text-base whitespace-nowrap">Галерея</a>
+          <Link to="/articles" className="hover:text-accent transition-colors text-red-900 font-medium text-sm lg:text-base whitespace-nowrap">Про оформление</Link>
+          <a href="#contact" className="hover:text-accent transition-colors text-red-900 font-medium text-sm lg:text-base whitespace-nowrap">Контакты</a>
         </div>
         <button 
           className="md:hidden"
