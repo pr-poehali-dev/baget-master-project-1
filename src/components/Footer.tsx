@@ -10,14 +10,8 @@ const Footer = () => {
           <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Send" size={24} />
           </a>
-          <a href="https://wa.me/yourwhatsapp" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
-            <Icon name="MessageCircle" size={24} />
-          </a>
           <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Instagram" size={24} />
-          </a>
-          <a href="https://vk.com/yourvk" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
-            <Icon name="Facebook" size={24} />
           </a>
         </div>
         <p className="text-muted-foreground mb-2">© 2025 Магия Багета. Все права защищены.</p>
