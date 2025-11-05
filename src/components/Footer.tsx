@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="absolute inset-0 bg-white/85"></div>
       <div className="container mx-auto text-center relative z-10">
         <div className="flex justify-center gap-6 mb-4">
-          <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
+          <a href="https://t.me/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Send" size={24} />
           </a>
           <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
