@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="https://t.me/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Send" size={24} />
           </a>
-          <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
+          <a href="https://instagram.com/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Instagram" size={24} />
           </a>
         </div>
