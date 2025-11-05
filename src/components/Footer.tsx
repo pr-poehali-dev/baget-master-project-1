@@ -13,6 +13,9 @@ const Footer = () => {
           <a href="https://instagram.com/mag_baget" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
             <Icon name="Instagram" size={24} />
           </a>
+          <a href="https://vk.com/magbaget" target="_blank" rel="noopener noreferrer" className="hover:text-red-700 transition-colors">
+            <Icon name="Facebook" size={24} />
+          </a>
         </div>
         <p className="text-muted-foreground mb-2">© 2025 Магия Багета. Все права защищены.</p>
         <div className="flex justify-center gap-6 text-sm mb-3">
