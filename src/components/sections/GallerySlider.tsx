@@ -1,9 +1,25 @@
 import Icon from "@/components/ui/icon";
 import { useGallerySlider } from "@/hooks/useGallerySlider";
-import { galleryItems } from "@/data/galleryItems";
-import { useState } from "react";
+import { galleryItems as defaultGalleryItems } from "@/data/galleryItems";
+import { useState, useEffect } from "react";
+import type { GalleryItem } from "@/data/galleryItems";
+
+const STORAGE_KEY = "baget_gallery_items";
 
 const GallerySlider = () => {
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(defaultGalleryItems);
+  
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        setGalleryItems(JSON.parse(saved));
+      } catch {
+        setGalleryItems(defaultGalleryItems);
+      }
+    }
+  }, []);
+  
   const { 
     currentSlide, 
     isAutoPlaying, 
