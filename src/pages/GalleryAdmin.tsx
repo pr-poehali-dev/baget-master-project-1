@@ -20,6 +20,8 @@ const GalleryAdmin = () => {
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [newItem, setNewItem] = useState<GalleryItem>({ image: "", alt: "", title: "" });
   const [isAddingNew, setIsAddingNew] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
     const savedPassword = localStorage.getItem(PASSWORD_KEY);
@@ -115,6 +117,54 @@ const GalleryAdmin = () => {
     }
   };
 
+  const uploadImageToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  };
+
+  const handleFileUpload = async (file: File) => {
+    if (!file.type.startsWith('image/')) {
+      toast.error("Пожалуйста, выберите изображение");
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error("Размер файла не должен превышать 5 МБ");
+      return;
+    }
+
+    setIsUploading(true);
+    try {
+      const base64 = await uploadImageToBase64(file);
+      setNewItem({ ...newItem, image: base64 });
+      toast.success("Изображение загружено");
+    } catch (error) {
+      toast.error("Ошибка загрузки изображения");
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const file = e.dataTransfer.files[0];
+    if (file) handleFileUpload(file);
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = () => {
+    setIsDragging(false);
+  };
+
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background to-muted flex items-center justify-center p-4">
@@ -181,12 +231,48 @@ const GalleryAdmin = () => {
             </h2>
             <div className="space-y-4">
               <div>
-                <Label htmlFor="image">URL изображения *</Label>
+                <Label>Изображение *</Label>
+                <div
+                  onDrop={handleDrop}
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
+                    isDragging ? 'border-accent bg-accent/10' : 'border-muted-foreground/20'
+                  }`}
+                >
+                  <Icon name="Upload" size={48} className="mx-auto mb-4 text-muted-foreground" />
+                  <p className="mb-4 text-muted-foreground">
+                    Перетащите изображение сюда или
+                  </p>
+                  <Input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) handleFileUpload(file);
+                    }}
+                    className="hidden"
+                    id="file-upload"
+                    disabled={isUploading}
+                  />
+                  <label htmlFor="file-upload">
+                    <Button type="button" variant="outline" asChild disabled={isUploading}>
+                      <span className="cursor-pointer">
+                        {isUploading ? "Загрузка..." : "Выбрать файл"}
+                      </span>
+                    </Button>
+                  </label>
+                  <p className="mt-4 text-xs text-muted-foreground">Максимум 5 МБ</p>
+                </div>
+              </div>
+              <div>
+                <Label htmlFor="image-url">или вставьте URL</Label>
                 <Input
-                  id="image"
-                  value={newItem.image}
+                  id="image-url"
+                  value={newItem.image.startsWith('data:') ? '' : newItem.image}
                   onChange={(e) => setNewItem({ ...newItem, image: e.target.value })}
                   placeholder="https://example.com/image.jpg"
+                  disabled={isUploading}
                 />
               </div>
               <div>
