@@ -247,38 +247,35 @@ const GalleryAdmin = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
-            <div key={index} className="bg-card rounded-lg shadow-lg overflow-hidden group">
-              <div className="aspect-video relative">
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+            <div key={index} className="bg-card rounded-lg shadow-lg overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{item.alt}</p>
+                <div className="flex gap-2">
                   <Button
                     onClick={() => handleEdit(index)}
+                    variant="outline"
                     size="sm"
-                    className="gap-2"
+                    className="flex-1 gap-2"
                   >
                     <Icon name="Pencil" size={16} />
                     Изменить
                   </Button>
                   <Button
                     onClick={() => handleDelete(index)}
-                    size="sm"
                     variant="destructive"
-                    className="gap-2"
+                    size="sm"
+                    className="flex-1 gap-2"
                   >
                     <Icon name="Trash2" size={16} />
                     Удалить
                   </Button>
                 </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-1 line-clamp-2">{item.title}</h3>
-                {item.alt && (
-                  <p className="text-sm text-muted-foreground line-clamp-2">{item.alt}</p>
-                )}
               </div>
             </div>
           ))}
