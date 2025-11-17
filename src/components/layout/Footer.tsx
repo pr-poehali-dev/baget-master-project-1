@@ -34,6 +34,15 @@ const Footer = () => {
             <span>•</span>
             <a href="/payment-delivery" className="hover:text-accent transition-colors underline">Оплата и доставка</a>
           </div>
+          <div className="flex justify-center my-4">
+            <iframe 
+              src="https://yandex.ru/sprav/widget/rating-badge/42572088968?type=rating" 
+              width="150" 
+              height="50" 
+              frameBorder="0"
+              title="Рейтинг на Яндексе"
+            />
+          </div>
           <p>© 2025 Магия Багета. Все права защищены.</p>
           <p>ИП Лукинский Антон Эдуардович<br />ОГРНИП 323508100708727</p>
         </div>
